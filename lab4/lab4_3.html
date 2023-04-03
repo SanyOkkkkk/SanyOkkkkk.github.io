@@ -2,6 +2,7 @@
 <html lang="ru">
 <head>
 		<meta charset="UTF-8">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 		<title>Оформление вертикального меню</title>
 		<style>
 			html {
@@ -18,10 +19,11 @@
                     list-style: none;
 			}
 			.menu li {
-                    list-style: none;
+				margin-bottom: 10px;
 			}
 			
 			.menu li:before {
+					font-family: FontAwesome;
                     left: 20px;
                     background: url('css_sprites.png') -10px -10px no-repeat;
                     content: '';
@@ -37,6 +39,7 @@
                     margin-bottom: 10px;
 			}
 			.menu li li:before {
+				
                     background-position: -10px -46px;
                     left: 20px;
                     margin-left: -20px;
@@ -44,6 +47,22 @@
 			.menu li li { 
                     margin-left: -20px;
 			}
+			///
+			.menu li li:before {
+                    font-family: FontAwesome;
+                    content: "\f2d3";
+                    left: 20px;
+                    margin-left: -20px;
+					
+			}
+            .menu li:before {
+                    content: "\f146";
+
+    		.menu  ul li:hover  li {
+                    list-style: none;
+			}
+    </style>
+			///
 	</style>
 </head>
 <body>

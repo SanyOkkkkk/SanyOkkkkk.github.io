@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
-    <head>
+<head>
 		<meta charset="UTF-8">
 		<title>Оформление вертикального меню</title>
 		<style>
@@ -8,41 +8,34 @@
 					background: #f0f0f0;
 			}
 			
-			.menu { 
+			.menu {
 					width: 200px;
 					background: #fff;
 			}
 			
 			.menu ul {
-                    position: relative;
-                    list-style: none;
-			}
-			.menu li {
-                    list-style: none;
+				list-style-image: url(minus.gif);	
 			}
 			
-			.menu li:before {
-                    left: 20px;
-                    background: url('css_sprites.png') -10px -10px no-repeat;
-                    content: '';
-                    height: 14px;
-                    width: 15px;
-                    position: absolute;
+			.menu li {
+					
 			}
 			
 			.menu li a {
-                    list-style: none;
+					
 			}
+			
+			.menu li a:hover {
+
+					
+			}
+			
 			.menu li ul {
-                    margin-bottom: 10px;
+				list-style-image: url(minus.gif);
 			}
-			.menu li li:before {
-                    background-position: -10px -46px;
-                    left: 20px;
-                    margin-left: -20px;
-			}
-			.menu li li { 
-                    margin-left: -20px;
+			
+			.menu li li {
+					
 			}
 	</style>
 </head>
