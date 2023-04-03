@@ -5,6 +5,22 @@
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<title>Awesome меню</title>
 		<style>
+			html {
+					background: #f0f0f0;
+			}
+			.menu ul {
+                    position: relative;
+			}
+
+			.menu li {
+                    list-style: none;
+			}
+			.menu li a {
+                    list-style: none;
+			}
+    		.menu  ul li:hover  li {
+                    list-style: none;
+			}
             .menu li li:before {
                     font-family: FontAwesome;
                     content: "\f2d3";
@@ -19,25 +35,9 @@
                     position: absolute;
 			}
 
-			html {
-					background: #f0f0f0;
-			}
-
 			.menu {
 					width: 200px;
 					background: #fff;
-			}
-
-			.menu ul {
-                    position: relative;
-			}
-
-			.menu li {
-                    list-style: none;
-			}
-
-			.menu li a {
-                    list-style: none;
 			}
 
 			.menu li ul {
@@ -46,10 +46,6 @@
 			
 			.menu li li { 
                     margin-left: -20px;
-			}
-            
-    		.menu  ul li:hover  li {
-                    list-style: none;
 			}
     </style>
 </head>
