@@ -8,8 +8,14 @@
 </head>
 <body>
     <script>
-        "use strict";
-        let num = prompt("Введите число");
+        "use strict"
+        let num;
+        do{
+             num = prompt("Вводи число, большее 100");
+        }
+        while (num <= 100 && num);
+        alert("Молодец!");
+
     </script>
 </body>
 </html>   
