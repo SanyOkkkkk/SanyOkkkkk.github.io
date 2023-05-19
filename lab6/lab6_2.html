@@ -10,11 +10,44 @@
         display: table;
         clear: both;
     }
-    #container {
+    html,body {
+	    height: 100%;
+    }
+
+    #container{
+        position: relative;
+        min-height: 100%;
         width: 800px;
-        height: 400px;
-        margin-left: auto;
-        margin-right: auto;
+        border: 6px solid #ffffff; 
+        text-align: left; 
+        margin: 0 auto;
+    }
+    #content{
+        background: #ffffff;
+        padding-bottom: 90px;
+        
+    } 
+    #center{
+        width: 600px;
+        background:rgb(255, 255, 255);
+        border: 10px solid #ffffff;
+        margin: 0;
+    
+    }
+    #header{
+        background: #c0d7ee;
+        height: 100px;
+        border: 10px solid #ffffff;
+        
+    }
+    #right{
+        background-image: url(right.png);
+        float: right;
+        height: 180px;
+        width: 200px;
+        border: 10px solid #ffffff;
+        
+    
     }
     #left{
         background-image: url(left.png);
@@ -22,42 +55,24 @@
         height: 180px;
         width: 200px;
         border: 10px solid #ffffff;
+        
+    
     }
-    #right{
-        background-image: url(right.png);
-        float: right;
-        height: 180px;
-        width: 200px;
-        border: 10px solid #ffffff;  
-    }
-    #header{
-        background: #CCDDEE;
-        height: 90px;
-        width: 800px;
-    }
-    #center{
-        width: 600px;
-        background:rgb(255, 255, 255);
-        border: 10px solid #ffffff;
-        margin: 0;
-    }
-    #content{
-        background: #ffffff;
-        padding-bottom: 90px;
-    }
+    
+   
     #footer{
         position: absolute;
-        background: #ebbdf1;
+        background: #eac2f1;
         height: 80px;
         width: 783px;
         left: 0;
         bottom: 0;
         border: 10px solid #ffffff;
-}
-    li {
-        list-style-image: url(plus.png);
+    
     }
-    </style>
+    li { 
+        list-style-image: url(plus.png); 
+    } 
 </head>
 <body>
 <div id="container">
