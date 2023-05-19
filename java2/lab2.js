@@ -9,15 +9,23 @@ function sumTo(n)
 }
 function factorial(n)
 {
-    //return BigInt(n ? (n * factorial(n-1)) : 1) ;
-   var p=1;
-   for (var f=1; f<=n; f++)
-   {
-       p=p*f;
-    }
-    
-    return BigInt(p);
+    return BigInt(n ? (n * factorial(n-1)) : 1) ;
 }
 function fib(n){
-    return BigInt(n<=1 ? n: fib(n-1)+fib(n-2));
+    a = BigInt(1);
+    b=BigInt(1);
+    if (n== BigInt(0))
+    {
+        return BigInt(0);
+    }
+    else
+    {
+        for (i = BigInt(3); i<=n; i++)
+        {
+            c = a+b;
+            a=b;
+            b=c;
+        }
+        return b;
+    }
 }
