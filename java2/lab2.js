@@ -55,10 +55,10 @@ return function(y)
 //функция возвращает сумму всех своих аргументов.
 function sum()
 {
-    var result=0;
+    var result=0; //сумма
     for (var i=0; i<arguments.length; i++)
     {
-        result+=arguments[i]
+        result+=arguments[i] //складываем элементы на соответствующих местах
     }
     return result;
 }
