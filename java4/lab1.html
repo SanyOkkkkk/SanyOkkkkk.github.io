@@ -7,17 +7,20 @@
 </head>
 <body>
     <script>
-        let book1 = {}
-
+       let book1 = {
+    title:"13 drugaley oshena",
+    pubYear: 2009,
+    price:202,
+    show: function () {
+        console.log(this.title);
+        console.log(this.price);
+} 
+       }
+let book2 = {}
 book1.title="10 negr";
 book1.pubYear="1908";
 book1.price="200";
 
-let book2 = {
-    title:"13 drugaley oshena",
-    pubYear:"2009",
-    price:"202"
-}
 for (let key in book1) {
   if(book1.hasOwnProperty(key)){
     console.log(`${key} : ${book1[key]}`)
@@ -28,6 +31,12 @@ for (let key in book2) {
   if(book2.hasOwnProperty(key)){
     console.log(`${key} : ${book2[key]}`)
   }
+}
+book1.show();
+
+book2.show = function showBook() {
+    console.log(this.title);
+    console.log(this.price);
 }
     </script>
 </body>
