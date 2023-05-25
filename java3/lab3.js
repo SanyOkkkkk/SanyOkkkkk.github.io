@@ -22,11 +22,18 @@ export function  truncate(str, maxlength){
     str.slice(0, maxlength - 1) + '…' : str;
 }
 export function  camelize(str){
-    return str.replace(/-/g, "");
+    let STR = str.split("-");
+    let StrNew = "";
+    for (let i = 0; i <= STR.length - 1; i++) {
+        if (i == 0) StrNew = STR[0];
+        else StrNew += ucFirst(STR[i]);
+    }
+    return StrNew;
 }
 export function  fibs(n){
-    return (str.length > maxlength) ?
-    str.slice(0, maxlength - 1) + '…' : str;
+    let arr = [];
+    for (let i = 0; i < n; i++) arr.push(fib(i));
+    return arr;
 }
 export function  arrReverseSorted(arr){
     return arr.sort(function (a, b) {
