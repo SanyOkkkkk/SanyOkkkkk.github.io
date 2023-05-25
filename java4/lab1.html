@@ -7,18 +7,28 @@
 </head>
 <body>
     <script>
-        let bock1 = {}
+        let book1 = {}
 
-bock1.title="10 negr";
-bock1.pubYear="1908";
-bock1.price="200";
+book1.title="10 negr";
+book1.pubYear="1908";
+book1.price="200";
 
-let bock2 = {
+let book2 = {
     title:"13 drugaley oshena",
     pubYear:"2009",
     price:"202"
 }
-console.log(bock2.price)
+for (let key in book1) {
+  if(book1.hasOwnProperty(key)){
+    console.log(`${key} : ${book1[key]}`)
+  }
+}
+console.log("_____")
+for (let key in book2) {
+  if(book2.hasOwnProperty(key)){
+    console.log(`${key} : ${book2[key]}`)
+  }
+}
     </script>
 </body>
 </html>
