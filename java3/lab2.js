@@ -21,21 +21,17 @@ function factorial(n)
     }
 }
 //функция возвращает n-е число Фибоначчи
-export function fib(n){
-    a = BigInt(1); // первое число Фиббоначи
-    b=BigInt(1); //второе число Фиббоначи
-    if (n== BigInt(0))
-    {
-        return BigInt(0); //возвращаем нуль при n=0
+export function fib(n) {
+    let a = 1n;
+    let b = 1n;
+    if (n == 0n) {
+        return 0n;
     }
-    else
-    {
-        //алгоритм нахождения чисел Фиббоначи (базовый)
-        for (i = BigInt(3); i<=n; i++) 
-        {
-            c = a+b;
-            a=b;
-            b=c;
+    else {
+        for (let i = 3n; i <= n; i++) {
+            let c = a + b;
+            a = b;
+            b = c;
         }
         return b;
     }
