@@ -29,24 +29,27 @@ function factorial(n)
 {
     if (n<=0)
     {
-        return 1n; //возвращаем 1 для чисел, меньших 0
+        return 1n;
     }
     else{
         res = BigInt (n) *  BigInt(factorial(n-1))
     }
     return res;
 }
-//функция возвращает n-е число Фибоначчи
+/**
+ * Возвращает n-е число Фибоначчи.
+ * @param {number} n Порядковый номер числа Фибоначчи, должен быть натуральным числом.
+ * @return {number} b, n-е число Фибоначчи.
+ */
 function fib(n){
-    a = BigInt(1); // первое число Фиббоначи
-    b=BigInt(1); //второе число Фиббоначи
+    a = BigInt(1);
+    b=BigInt(1);
     if (n== BigInt(0))
     {
-        return BigInt(0); //возвращаем нуль при n=0
+        return BigInt(0);
     }
     else
     {
-        //алгоритм нахождения чисел Фиббоначи (базовый)
         for (i = BigInt(3); i<=n; i++) 
         {
             c = a+b;
@@ -56,9 +59,13 @@ function fib(n){
         return b;
     }
 }
-//функция принимает целочисленное значение x и возвращает 
-//анонимную функцию. Анонимная функция возвращает 
-//результат сравнения значений y и x
+/**
+ * Возвращает результат сравнения значений y и x.
+ * @param {number} x Первый аргумент, должен быть целочисленным.
+ * @param {number} y Второй аргумент, должен быть целочисленным.
+ * @return {function} Анонимная функция, которая вернет true, false или null
+ }} Результат сравнения.
+ */
 function compare(x)
 {
 return function(y)
@@ -68,13 +75,17 @@ return function(y)
     else if (y==x) return null;
 }
 }
-//функция возвращает сумму всех своих аргументов.
+/**
+ * Возвращает сумму всех своих аргументов.
+ * @param {number} Значения аргументов.
+ * @return {number} result, сумма всех своих аргументов.
+ */
 function sum()
 {
-    var result=0; //сумма
+    var result=0;
     for (var i=0; i<arguments.length; i++)
     {
-        result+=arguments[i] //складываем элементы на соответствующих местах
+        result+=arguments[i]
     }
     return result;
 }
