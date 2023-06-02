@@ -6,19 +6,19 @@
     <title>Document</title>
 </head>
 <body>
-    <select id="jan">
+    <select id="janr">
 <option value="Rock">Рок</option>
 <option value="Blues" selected>Блюз</option>
 </select>
 <script>
     // 1)
-    let selectedOption = jan.options[jan.selectedIndex];
-    alert( selectedOption.value );
-    alert( selectedOption.text );
+    let selectOption = janr.options[janr.selectedIndex];
+    console.log(selectOption.value);
+    console.log(selectOption.text);
   
     // 2)
-    let newOption = new Option("Классика");
-    jan.append(newOption);
+    let newOption = new Option("Классика", "classic");
+    janr.append(newOption);
   
     // 3)
     newOption.selected = true;
