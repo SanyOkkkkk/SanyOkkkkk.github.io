@@ -21,9 +21,9 @@ obj.addClass = function addClass(cls) {
     this.className = arr.join(" ");// присваеваем свойству объекта, новый список классов.
 }
 
-obj.addClass('NEW'); // open menu new
-obj.addClass('Zdravstvyite'); // open menu new Zdravstvyite
-obj.addClass('osdd');  // без изменений 
+obj.addClass('NEW'); // open menu NEW
+obj.addClass('Zdravstvyite'); // open menu NEW Zdravstvyite
+obj.addClass('open');  // без изменений 
 
 console.log(obj.className);
 
@@ -38,7 +38,7 @@ obj.removeClass = function removeClass(cls) {
     obj.className = arr.join(' ');
 }
 
-obj.removeClass('osdd'); // open menu hi
+obj.removeClass('Dosvidanya'); // open menu hi
 obj.removeClass('ho'); // open menu hi
 obj.removeClass('open'); // menu hi
 
