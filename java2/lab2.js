@@ -17,10 +17,14 @@ function pow(x, n)
  */
 function sumTo(n)
 {
-    return (n*(n+1))/2  //формула суммы арифметической прогрессии
+    return (n*(n+1))/2;  //формула суммы арифметической прогрессии
 
 }
-//функция возвращает факториал числа n
+/**
+ * Возвращает факториал числа n!.
+ * @param {number} n Число, факториал которого вычисляется, должно быть натуральным числом.
+ * @return {number} res, факториал числа n!.
+ */
 function factorial(n)
 {
     if (n<=0)
@@ -28,8 +32,9 @@ function factorial(n)
         return 1n; //возвращаем 1 для чисел, меньших 0
     }
     else{
-        return ( BigInt (n) *  BigInt(factorial(n-1))); //использование рекурсии 
+        res = BigInt (n) *  BigInt(factorial(n-1))
     }
+    return res;
 }
 //функция возвращает n-е число Фибоначчи
 function fib(n){
