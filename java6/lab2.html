@@ -36,7 +36,7 @@
 	</style>
 </head>
 <body>
-	<div class="menu open">
+	<div id="taste" class="menu open">
 		<span class="title ">Сладости (нажми меня)!</span>
 	 	<ul>
 	    	<li>Торт</li>
@@ -44,5 +44,12 @@
 	    	<li>Пирожное</li>
 	  	</ul>
 	</div>
+    <script>
+        let menu = document.getElementById('taste');
+        let Elem = menu.querySelector('.title');
+        Elem.onclick = function() {
+          menu.classList.toggle('open');
+        };
+        </script>
 </body>
 </html>
