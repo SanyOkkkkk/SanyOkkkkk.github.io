@@ -12,8 +12,14 @@
 
 	<script>
     /* ваш код */
-    document.getElementById('hider').onclick = function() {
-      document.getElementById('text').hidden = true;
+    document.getElementById('hider').onclick = function(){
+			if (document.getElementById('text').style.display != 'none') {
+				document.getElementById('text').style.display = 'none';
+				document.getElementById('hider').value = 'Показать текст';
+			} else {
+				document.getElementById('text').style.display = 'block';
+				document.getElementById('hider').value = 'Спрятать текст';
+			}
     }
 	</script>
 </body>
