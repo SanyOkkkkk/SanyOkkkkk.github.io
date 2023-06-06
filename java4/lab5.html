@@ -1,21 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <script>
-'use strict'
-function getSecondsToday() {
-    const d = new Date();
-    return d.getHours() * 3600 + d.getMinutes() * 60 + d.getSeconds();
-  }
-console.log(`С начала дня прошло ${getSecondsToday()} секунд`)
+        'use strict'
+        function formatDate(date) {
+
+            let d = date.getDate();
+            if (d < 10) d = '0' + d;
+
+            let m = date.getMonth() + 1;
+            if (m < 10) m = '0' + m;
+
+            let y = date.getFullYear() % 100;
+            if (y < 10) y = '0' + y;
+
+            return d + '.' + m + '.' + y;
+        }
+        let d = new Date(2003, 8, 29); // 29 cент 2003
+        console.log(formatDate(d)); // '29.09.2003'
     </script>
 </body>
+
 </html>
-
-
-
