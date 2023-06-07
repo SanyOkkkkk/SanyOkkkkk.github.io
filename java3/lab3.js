@@ -65,13 +65,13 @@ export function truncate(str, maxlength) {
  * @return {string} StrNew, преобразованная строка.
  */
 export function camelize(str) {
-    let STR = str.split("-");
-    let StrNew = "";
-    for (let i = 0; i <= STR.length - 1; i++) {
-        if (i == 0) StrNew = STR[0];
-        else StrNew += ucFirst(STR[i]);
+    let stroka = str.split("-");
+    let strNew = "";
+    for (let i = 0; i <= stroka.length - 1; i++) {
+        if (i == 0) strNew = stroka[0];
+        else strNew += ucFirst(stroka[i]);
     }
-    return StrNew;
+    return strNew;
 }
 
 /**
