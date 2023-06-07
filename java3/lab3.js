@@ -37,8 +37,8 @@ export function ucFirst(str) {
  * @return {boolean} true, если строка str содержит 'viagra' или 'XXX', а иначе false.
  */
 export function checkSpam(str) {
-    let NewStr = str.toLowerCase(); //перевод к нижнему регистру
-    return NewStr.includes('viagra') || NewStr.includes('xxx');
+    let newStr = str.toLowerCase(); //перевод к нижнему регистру
+    return newStr.includes('viagra') || newStr.includes('xxx');
 }
 
 
