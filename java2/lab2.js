@@ -33,7 +33,7 @@ function sumTo(n) {
 function factorial(n) {
     if (n <= 1) return 1n;
     else {
-        res = BigInt(n) * BigInt(factorial(n - 1))
+        let res = BigInt(n) * BigInt(factorial(n - 1))
         return res;
     }
 }
